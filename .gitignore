@@ -1,0 +1,8 @@
+node_modules/
+dist/
+screenshots/
+*.log
+.tmp-edge-*/
+.tmp-*.mjs
+.DS_Store
+Thumbs.db

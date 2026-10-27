@@ -1,0 +1,32 @@
+{
+  "name": "asian-table-tennis-championships-scoreboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "node --experimental-strip-types --watch server/index.ts",
+    "dev:web": "vite --config vite.config.ts",
+    "dev": "concurrently -k \"npm run dev:server\" \"npm run dev:web\"",
+    "build": "vite build",
+    "test": "node --experimental-strip-types --test",
+    "start": "cross-env NODE_ENV=production node --experimental-strip-types server/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
